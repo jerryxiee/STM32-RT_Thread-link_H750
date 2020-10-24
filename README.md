@@ -31,6 +31,7 @@ RT-Thread x STM32 全连接创意创客大赛
 2.  LD3320 （位于/document/module/LD3320）
 3.  ATK-7 RGB TFTLCD （分辨率：1024*600）（ATK）（位于/document/module/【正点原子】7寸RGBLCD电容触摸屏模块1024600资料）
 4.  OV5640摄像头模块（ATK）（位于/document/module/【正点原子】OV5640单目摄像头模块资料）
+5.  [在ART-Pi H750上移植TouchGFX](https://blog.csdn.net/sinat_31039061/article/details/108599356)
 
 ## 提高项
 
