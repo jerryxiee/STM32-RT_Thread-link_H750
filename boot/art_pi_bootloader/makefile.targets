@@ -4,4 +4,4 @@ clean2:
 	-@echo ' '
 
 
-*.elf: $(wildcard F:/Users/xqyjlj/Documents/GitHub/STM32-RT_Thread-link_H750/demo/art_pi_bootloader/board/linker_scripts/STM32H750XBHx/link.lds)
+*.elf: $(wildcard F:/Users/xqyjlj/Documents/GitHub/STM32-RT_Thread-link_H750/boot/art_pi_bootloader/board/linker_scripts/STM32H750XBHx/link.lds)
