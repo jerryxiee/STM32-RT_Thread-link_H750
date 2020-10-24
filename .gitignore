@@ -1,0 +1,8 @@
+
+*.d
+*.o
+*.crf
+*.htm
+*.lnp
+*.sct
+*.dep
