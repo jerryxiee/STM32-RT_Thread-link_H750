@@ -107,12 +107,16 @@
 
 #define RT_USING_DEVICE_IPC
 #define RT_PIPE_BUFSZ 512
+#define RT_USING_SYSTEM_WORKQUEUE
+#define RT_SYSTEM_WORKQUEUE_STACKSIZE 2048
+#define RT_SYSTEM_WORKQUEUE_PRIORITY 23
 #define RT_USING_SERIAL
 #define RT_SERIAL_RB_BUFSZ 64
 #define RT_USING_I2C
 #define RT_USING_I2C_BITOPS
 #define RT_USING_PIN
 #define RT_USING_MTD_NOR
+#define RT_USING_RTC
 #define RT_USING_SDIO
 #define RT_SDIO_STACK_SIZE 512
 #define RT_SDIO_THREAD_PRIORITY 15
@@ -124,6 +128,10 @@
 #define RT_SFUD_USING_SFDP
 #define RT_SFUD_USING_FLASH_INFO_TABLE
 #define RT_SFUD_SPI_MAX_HZ 50000000
+#define RT_USING_AUDIO
+#define RT_AUDIO_REPLAY_MP_BLOCK_SIZE 4096
+#define RT_AUDIO_REPLAY_MP_BLOCK_COUNT 2
+#define RT_AUDIO_RECORD_PIPE_SIZE 2048
 
 /* Using USB */
 
@@ -144,6 +152,13 @@
 
 /* Network interface device */
 
+#define RT_USING_NETDEV
+#define NETDEV_USING_IFCONFIG
+#define NETDEV_USING_PING
+#define NETDEV_USING_NETSTAT
+#define NETDEV_USING_AUTO_DEFAULT
+#define NETDEV_IPV4 1
+#define NETDEV_IPV6 0
 /* end of Network interface device */
 
 /* light weight TCP/IP stack */
@@ -247,6 +262,9 @@
 
 /* peripheral libraries and drivers */
 
+#define PKG_USING_LD3320
+#define PKG_USING_LD3320_V100
+#define PKG_LD3320_VERSION "v1.0.0"
 /* end of peripheral libraries and drivers */
 
 /* miscellaneous packages */
@@ -294,7 +312,6 @@
 #define BSP_USING_SDIO
 #define BSP_USING_SDIO1
 #define BSP_USING_SDRAM
-#define BSP_USING_LCD
 #define BSP_USING_DCMI
 /* end of On-chip Peripheral */
 /* end of Hardware Drivers Config */

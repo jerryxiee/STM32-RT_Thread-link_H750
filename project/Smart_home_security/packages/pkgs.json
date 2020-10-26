@@ -13,5 +13,10 @@
   "path": "/packages/system/littlefs", 
   "ver": "v2.0.5", 
   "name": "LITTLEFS"
+ }, 
+ {
+  "path": "/packages/peripherals/ld3320", 
+  "ver": "v1.0.0", 
+  "name": "LD3320"
  }
 ]
