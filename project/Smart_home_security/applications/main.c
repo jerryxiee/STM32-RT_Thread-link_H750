@@ -19,7 +19,6 @@ int main(void)
     rt_uint32_t count = 1;
 
     rt_pin_mode(LED_PIN, PIN_MODE_OUTPUT);
-
     while(count++)
     {
         rt_thread_mdelay(500);

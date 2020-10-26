@@ -83,10 +83,24 @@
 
 #define RT_USING_DFS
 #define DFS_USING_WORKDIR
-#define DFS_FILESYSTEMS_MAX 2
-#define DFS_FILESYSTEM_TYPES_MAX 2
+#define DFS_FILESYSTEMS_MAX 5
+#define DFS_FILESYSTEM_TYPES_MAX 5
 #define DFS_FD_MAX 16
+#define RT_USING_DFS_ELMFAT
+
+/* elm-chan's FatFs, Generic FAT Filesystem Module */
+
+#define RT_DFS_ELM_CODE_PAGE 437
+#define RT_DFS_ELM_WORD_ACCESS
+#define RT_DFS_ELM_USE_LFN_3
+#define RT_DFS_ELM_USE_LFN 3
+#define RT_DFS_ELM_MAX_LFN 255
+#define RT_DFS_ELM_DRIVES 2
+#define RT_DFS_ELM_MAX_SECTOR_SIZE 4096
+#define RT_DFS_ELM_REENTRANT
+/* end of elm-chan's FatFs, Generic FAT Filesystem Module */
 #define RT_USING_DFS_DEVFS
+#define RT_USING_DFS_ROMFS
 /* end of Device virtual file system */
 
 /* Device Drivers */
@@ -95,8 +109,21 @@
 #define RT_PIPE_BUFSZ 512
 #define RT_USING_SERIAL
 #define RT_SERIAL_RB_BUFSZ 64
+#define RT_USING_I2C
+#define RT_USING_I2C_BITOPS
 #define RT_USING_PIN
+#define RT_USING_MTD_NOR
+#define RT_USING_SDIO
+#define RT_SDIO_STACK_SIZE 512
+#define RT_SDIO_THREAD_PRIORITY 15
+#define RT_MMCSD_STACK_SIZE 1024
+#define RT_MMCSD_THREAD_PREORITY 22
+#define RT_MMCSD_MAX_PARTITION 16
 #define RT_USING_SPI
+#define RT_USING_SFUD
+#define RT_SFUD_USING_SFDP
+#define RT_SFUD_USING_FLASH_INFO_TABLE
+#define RT_SFUD_SPI_MAX_HZ 50000000
 
 /* Using USB */
 
@@ -134,6 +161,7 @@
 
 /* Utilities */
 
+#define RT_USING_RYM
 #define RT_USING_ULOG
 #define ULOG_OUTPUT_LVL_D
 #define ULOG_OUTPUT_LVL 7
@@ -186,10 +214,35 @@
 
 /* tools packages */
 
+#define PKG_USING_EASYFLASH
+#define PKG_EASYFLASH_ENV
+#define PKG_EASYFLASH_ERASE_GRAN 4096
+#define PKG_EASYFLASH_WRITE_GRAN_1BIT
+#define PKG_EASYFLASH_WRITE_GRAN 1
+#define PKG_EASYFLASH_START_ADDR 0
+#define PKG_EASYFLASH_DEBUG
+#define PKG_USING_EASYFLASH_V410
+#define PKG_EASYFLASH_VER_NUM 0x40100
 /* end of tools packages */
 
 /* system packages */
 
+#define PKG_USING_FAL
+#define FAL_DEBUG_CONFIG
+#define FAL_DEBUG 1
+#define FAL_PART_HAS_TABLE_CFG
+#define FAL_USING_SFUD_PORT
+#define FAL_USING_NOR_FLASH_DEV_NAME "norflash0"
+#define PKG_USING_FAL_V00500
+#define PKG_FAL_VER_NUM 0x00500
+#define PKG_USING_LITTLEFS
+#define PKG_USING_LITTLEFS_V205
+#define LFS_READ_SIZE 256
+#define LFS_PROG_SIZE 256
+#define LFS_BLOCK_SIZE 4096
+#define LFS_CACHE_SIZE 256
+#define LFS_BLOCK_CYCLES 0
+#define LFS_LOOKAHEAD_MAX 128
 /* end of system packages */
 
 /* peripheral libraries and drivers */
@@ -217,6 +270,10 @@
 /* Onboard Peripheral */
 
 #define BSP_USING_USB_TO_USART
+#define BSP_USING_OV2640
+#define BSP_USING_FS
+#define BSP_USING_SDCARD_FS
+#define BSP_USING_SPI_FLASH_FS
 /* end of Onboard Peripheral */
 
 /* On-chip Peripheral */
@@ -224,11 +281,27 @@
 #define BSP_USING_GPIO
 #define BSP_USING_UART
 #define BSP_USING_UART4
+#define BSP_USING_SPI
+#define BSP_USING_SPI1
+#define BSP_USING_SPI2
+#define BSP_USING_SPI4
+#define BSP_USING_I2C1
+
+/* Notice: PB6 --> 22; PB7 --> 23 */
+
+#define BSP_I2C1_SCL_PIN 22
+#define BSP_I2C1_SDA_PIN 23
+#define BSP_USING_SDIO
+#define BSP_USING_SDIO1
+#define BSP_USING_SDRAM
+#define BSP_USING_LCD
+#define BSP_USING_DCMI
 /* end of On-chip Peripheral */
 /* end of Hardware Drivers Config */
 
 /* External Libraries */
 
+#define ART_PI_USING_OTA_LIB
 /* end of External Libraries */
 #define RT_STUDIO_BUILT_IN
 
