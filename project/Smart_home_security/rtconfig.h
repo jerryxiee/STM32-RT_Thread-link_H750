@@ -5,7 +5,7 @@
 
 /* RT-Thread Kernel */
 
-#define RT_NAME_MAX 8
+#define RT_NAME_MAX 32
 #define RT_ALIGN_SIZE 4
 #define RT_THREAD_PRIORITY_32
 #define RT_THREAD_PRIORITY_MAX 32
@@ -68,7 +68,7 @@
 #define RT_USING_FINSH
 #define FINSH_THREAD_NAME "tshell"
 #define FINSH_USING_HISTORY
-#define FINSH_HISTORY_LINES 5
+#define FINSH_HISTORY_LINES 20
 #define FINSH_USING_SYMTAB
 #define FINSH_USING_DESCRIPTION
 #define FINSH_THREAD_PRIORITY 20
@@ -115,6 +115,7 @@
 #define RT_USING_I2C
 #define RT_USING_I2C_BITOPS
 #define RT_USING_PIN
+#define RT_USING_ADC
 #define RT_USING_MTD_NOR
 #define RT_USING_RTC
 #define RT_USING_SDIO
@@ -288,7 +289,6 @@
 /* Onboard Peripheral */
 
 #define BSP_USING_USB_TO_USART
-#define BSP_USING_OV2640
 #define BSP_USING_FS
 #define BSP_USING_SDCARD_FS
 #define BSP_USING_SPI_FLASH_FS
@@ -312,7 +312,6 @@
 #define BSP_USING_SDIO
 #define BSP_USING_SDIO1
 #define BSP_USING_SDRAM
-#define BSP_USING_DCMI
 /* end of On-chip Peripheral */
 /* end of Hardware Drivers Config */
 

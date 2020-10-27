@@ -12,6 +12,7 @@
 #include <stdint.h>
 #include <rtdevice.h>
 
+
 void ld3320_write_reg(struct rt_spi_device *device, uint8_t addr, uint8_t data);
 uint8_t ld3320_read_reg(struct rt_spi_device *device, uint8_t addr);
 

@@ -523,7 +523,7 @@ ld3320_t ld3320_create(char *spi_dev_name, int wr, int rst, int irq, uint8_t mod
     /* reconfigure SPI mode */
     struct rt_spi_configuration cfg;
     cfg.data_width = 8;
-    cfg.mode = RT_SPI_MASTER | RT_SPI_MODE_2 | RT_SPI_MSB;
+    cfg.mode = RT_SPI_MASTER | RT_SPI_MODE_1 | RT_SPI_MSB;
     cfg.max_hz = 1 * 1000 * 1000;
     rt_spi_configure(ops->obj.dev, &cfg);
     /* initialize the IO port */
