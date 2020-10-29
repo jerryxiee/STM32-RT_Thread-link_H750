@@ -10,8 +10,6 @@
 
 #include "rtthread.h"
 #include "drv_common.h"
-#include "stm32h7xx_hal_adc.h"
-#include "stm32h7xx.h"
 ADC_HandleTypeDef hadc3;
 
 /**
@@ -43,7 +41,7 @@ static int MX_ADC3_Init(void)
     return RT_EOK;
 }
 
-INIT_PREV_EXPORT(MX_ADC3_Init);
+INIT_BOARD_EXPORT(MX_ADC3_Init);
 
 /*
  * 获得ADC值
