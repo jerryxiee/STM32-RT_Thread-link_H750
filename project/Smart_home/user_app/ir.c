@@ -228,13 +228,13 @@ int init_ir(void)
 
     rt_thread_t thread = RT_NULL;
 
-    thread = rt_thread_create("ir_rev", ir_rev_thread, RT_NULL, 500, 14, 100);
+    thread = rt_thread_create("ir_rev", ir_rev_thread, RT_NULL, 1024, 14, 100);
     if (thread != RT_NULL)
     {
         rt_thread_startup(thread);
     }
 
-    thread = rt_thread_create("ir_send", ir_send_thread, RT_NULL, 500, 14, 100);
+    thread = rt_thread_create("ir_send", ir_send_thread, RT_NULL, 1024, 14, 100);
     if (thread != RT_NULL)
     {
         rt_thread_startup(thread);

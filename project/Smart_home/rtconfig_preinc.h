@@ -10,5 +10,6 @@
 #define RT_USING_NEWLIB
 #define STM32H750xx
 #define USE_HAL_DRIVER
+#define _REENT_SMALL
 
 #endif /*RTCONFIG_PREINC_H__*/

@@ -27,18 +27,18 @@ struct drv_lcd_device
     rt_uint8_t *back_buf;
 };
 
-#define LCD_WIDTH           800
-#define LCD_HEIGHT          480
+#define LCD_WIDTH           1024
+#define LCD_HEIGHT          600
 #define LCD_BITS_PER_PIXEL  24
 #define LCD_BUF_SIZE        (LCD_WIDTH * LCD_HEIGHT * LCD_BITS_PER_PIXEL / 8)
 #define LCD_PIXEL_FORMAT    RTGRAPHIC_PIXEL_FORMAT_RGB888
 
-#define LCD_HSYNC_WIDTH     1
-#define LCD_VSYNC_HEIGHT    1
-#define LCD_HBP             88
-#define LCD_VBP             32
-#define LCD_HFP             40
-#define LCD_VFP             13
+#define LCD_HSYNC_WIDTH     20
+#define LCD_VSYNC_HEIGHT    3
+#define LCD_HBP             140
+#define LCD_VBP             20
+#define LCD_HFP             160
+#define LCD_VFP             12
 
 #define LCD_BACKLIGHT_USING_GPIO
 #define LCD_BL_GPIO_NUM     GET_PIN(D, 4)

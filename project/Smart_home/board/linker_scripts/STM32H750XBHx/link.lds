@@ -9,7 +9,7 @@ ROM (rx) : ORIGIN =0x90000000,LENGTH =8192k
 RAM (rw) : ORIGIN =0x24000000,LENGTH =512k
 }
 ENTRY(Reset_Handler)
-_system_stack_size = 0x200;
+_system_stack_size = 0x1000;
 
 SECTIONS
 {

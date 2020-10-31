@@ -61,6 +61,7 @@
 
 /* C++ features */
 
+#define RT_USING_CPLUSPLUS
 /* end of C++ features */
 
 /* Command shell */
@@ -113,6 +114,8 @@
 #define RT_USING_SERIAL
 #define RT_SERIAL_RB_BUFSZ 256
 #define RT_USING_HWTIMER
+#define RT_USING_I2C
+#define RT_USING_I2C_BITOPS
 #define RT_USING_PIN
 #define RT_USING_ADC
 #define RT_USING_MTD_NOR
@@ -129,6 +132,7 @@
 #define RT_SFUD_USING_SFDP
 #define RT_SFUD_USING_FLASH_INFO_TABLE
 #define RT_SFUD_SPI_MAX_HZ 50000000
+#define RT_USING_TOUCH
 #define RT_USING_WIFI
 #define RT_WLAN_DEVICE_STA_NAME "wlan0"
 #define RT_WLAN_DEVICE_AP_NAME "wlan1"
@@ -354,6 +358,11 @@
 
 /* peripheral libraries and drivers */
 
+#define PKG_USING_TOUCH_DRIVERS
+#define PKG_USING_GT9147
+#define PKG_USING_GT9147_LATEST_VERSION
+#define PKG_USING_FT5426
+#define PKG_USING_FT5426_LATEST_VERSION
 #define PKG_USING_LD3320
 #define PKG_USING_LD3320_V100
 #define PKG_LD3320_VERSION "v1.0.0"
@@ -394,10 +403,19 @@
 #define BSP_USING_UART4
 #define BSP_USING_SPI
 #define BSP_USING_SPI1
+#define BSP_USING_SPI2
+#define BSP_USING_SPI4
+#define BSP_USING_I2C1
+
+/* Notice: PB6 --> 22; PB7 --> 23 */
+
+#define BSP_I2C1_SCL_PIN 22
+#define BSP_I2C1_SDA_PIN 23
 #define BSP_USING_SDIO
 #define BSP_USING_SDIO1
 #define BSP_USING_SDIO2
 #define BSP_USING_SDRAM
+#define BSP_USING_LCD
 /* end of On-chip Peripheral */
 /* end of Hardware Drivers Config */
 
@@ -405,6 +423,7 @@
 
 #define ART_PI_USING_WIFI_6212_LIB
 #define ART_PI_USING_OTA_LIB
+#define ART_PI_TouchGFX_LIB
 /* end of External Libraries */
 #define RT_STUDIO_BUILT_IN
 

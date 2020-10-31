@@ -38,7 +38,7 @@ const uint8_t adv_data[] = {
     // Flags general discoverable, BR/EDR not supported
     0x02, BLUETOOTH_DATA_TYPE_FLAGS, 0x05,
     // Name
-    0x0b, BLUETOOTH_DATA_TYPE_COMPLETE_LOCAL_NAME, 'A', 'R', 'T', '-', 'P', 'i', ' ', ' ', ' ', ' ',
+    0x0b, BLUETOOTH_DATA_TYPE_COMPLETE_LOCAL_NAME, 'X', 'Q', 'Y', 'J', 'L', 'J', ' ', ' ', ' ', ' ',
     // Incomplete List of 16-bit Service Class UUIDs -- FF10 - only valid for testing!
 };
 const uint8_t adv_data_len = sizeof(adv_data);

@@ -69,7 +69,7 @@ int init_asr(void)
 {
     rt_thread_t thread = RT_NULL;
     rt_hw_spi_device_attach("spi4", "spi40", GPIOE, GPIO_PIN_4);
-    thread = rt_thread_create("asr", ld3320_asr_thread, RT_NULL, 500, 15, 100);
+    thread = rt_thread_create("asr", ld3320_asr_thread, RT_NULL, 1024, 15, 100);
     if (thread != RT_NULL)
     {
         rt_thread_startup(thread);
@@ -77,4 +77,4 @@ int init_asr(void)
     return RT_EOK;
 }
 
-INIT_APP_EXPORT(init_asr);
+//INIT_APP_EXPORT(init_asr);

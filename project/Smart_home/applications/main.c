@@ -26,7 +26,6 @@
 #define DBG_LVL DBG_LOG
 #include <rtdbg.h>
 
-
 int main(void)
 {
     wifi_init();

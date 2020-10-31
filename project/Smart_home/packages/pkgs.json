@@ -40,6 +40,16 @@
   "name": "LITTLEFS"
  }, 
  {
+  "path": "/packages/peripherals/touch/gt9147", 
+  "ver": "latest", 
+  "name": "GT9147"
+ }, 
+ {
+  "path": "/packages/peripherals/touch/ft5426", 
+  "ver": "latest", 
+  "name": "FT5426"
+ }, 
+ {
   "path": "/packages/peripherals/ld3320", 
   "ver": "v1.0.0", 
   "name": "LD3320"
