@@ -29,6 +29,7 @@ extern "C" {
 
 /* Includes ------------------------------------------------------------------*/
 #include "stm32h7xx_hal.h"
+#include "stm32h7xx_hal.h"
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
@@ -50,8 +51,6 @@ extern "C" {
 
 /* USER CODE END EM */
 
-void HAL_TIM_MspPostInit(TIM_HandleTypeDef *htim);
-
 /* Exported functions prototypes ---------------------------------------------*/
 void Error_Handler(void);
 
@@ -60,6 +59,18 @@ void Error_Handler(void);
 /* USER CODE END EFP */
 
 /* Private defines -----------------------------------------------------------*/
+#define VS_XCS_Pin GPIO_PIN_10
+#define VS_XCS_GPIO_Port GPIOG
+#define VS_XDCS_Pin GPIO_PIN_4
+#define VS_XDCS_GPIO_Port GPIOE
+#define IIC_SDA_Pin GPIO_PIN_10
+#define IIC_SDA_GPIO_Port GPIOA
+#define IIC2_SCL_Pin GPIO_PIN_8
+#define IIC2_SCL_GPIO_Port GPIOA
+#define VS_DREQ_Pin GPIO_PIN_2
+#define VS_DREQ_GPIO_Port GPIOB
+#define VS_RST_Pin GPIO_PIN_1
+#define VS_RST_GPIO_Port GPIOB
 /* USER CODE BEGIN Private defines */
 
 /* USER CODE END Private defines */
